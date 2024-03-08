@@ -1,2 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+  <% if @list.present? %>
+    <% @list.each do |list| %>
+    <%= list.title %>
+  <% end %>
+  <% else %>
+    <%= render "shared/form" %>
+  <% end %>
