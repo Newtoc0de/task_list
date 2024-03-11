@@ -1,0 +1,7 @@
+<div class="container">
+  <% if @lists.present? %>
+    <% @lists.each do |list| %>
+      <%= list.title %>
+    <% end %>
+  <% end %>
+</div>
